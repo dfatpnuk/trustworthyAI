@@ -1,0 +1,21 @@
+2024-06-02 12:54:42,789 INFO - helpers.log_helper - Completed configuring logger.
+2024-06-02 12:54:42,789 INFO - __main__ - Python version is 3.8.19
+2024-06-02 12:54:42,789 INFO - __main__ - Current commit of code: ___
+2024-06-02 12:54:42,790 INFO - __main__ - Configuration parameters: {'encoder_type': 'TransformerEncoder', 'hidden_dim': 64, 'num_heads': 16, 'num_stacks': 6, 'residual': False, 'decoder_type': 'SingleLayerDecoder', 'decoder_activation': 'tanh', 'decoder_hidden_dim': 16, 'use_bias': False, 'use_bias_constant': False, 'bias_initial_value': False, 'batch_size': 64, 'input_dimension': 64, 'max_length': 12, 'data_size': 5000, 'read_data': True, 'data_path': '/Users/jaime/repos/sit723/causal-datasets/Real_Dataset', 'normalize': False, 'transpose': True, 'score_type': 'BIC', 'reg_type': 'LR', 'lambda_iter_num': 1000, 'lambda_flag_default': True, 'score_bd_tight': True, 'lambda1_update': 1, 'lambda2_update': 10, 'score_lower': 0.0, 'score_upper': 0.0, 'lambda2_lower': -1, 'lambda2_upper': -1, 'seed': 8, 'nb_epoch': 20000, 'lr1_start': 0.001, 'lr1_decay_step': 5000, 'lr1_decay_rate': 0.96, 'alpha': 0.99, 'init_baseline': -1.0, 'temperature': 3.0, 'C': 10.0, 'l1_graph_reg': 0.0, 'inference_mode': True, 'restore_model': False, 'save_to': '20/model', 'restore_from': '20/model', 'log_dir': 'summary/20/repo', 'verbose': False, 'save_model_path': 'output/2024-06-02_12-54-42-789/model', 'summary_dir': 'output/2024-06-02_12-54-42-789/summary', 'plot_dir': 'output/2024-06-02_12-54-42-789/plot', 'graph_dir': 'output/2024-06-02_12-54-42-789/graph'}
+2024-06-02 12:55:01,373 INFO - __main__ - Original sl: 5.491500093247754, su: 6.1552926883475765, strue: 7.0783826824291545
+2024-06-02 12:55:01,373 INFO - __main__ - Transfomed sl: 5.491500093247754, su: 6.1552926883475765, lambda2: 0.0001, true: 11.953150734852365
+2024-06-02 12:55:01,377 CRITICAL - helpers.log_helper - Unhandled exception
+Traceback (most recent call last):
+  File "main.py", line 314, in <module>
+    main()
+  File "main.py", line 116, in main
+    actor = Actor(config)
+  File "/Users/jaime/repos/sit723/trustworthyAI/research/Causal Discovery with RL/src/models/actor_graph.py", line 60, in __init__
+    self.build_permutation()
+  File "/Users/jaime/repos/sit723/trustworthyAI/research/Causal Discovery with RL/src/models/actor_graph.py", line 74, in build_permutation
+    self.encoder_output = encoder.encode(self.input_)
+  File "/Users/jaime/repos/sit723/trustworthyAI/research/Causal Discovery with RL/src/models/encoder/transformer_encoder.py", line 95, in encode
+    with tf.variable_scope("embedding"):
+AttributeError: module 'tensorflow' has no attribute 'variable_scope'
+2024-06-02 12:55:01,487 INFO - rpy2.rinterface_lib.embedded - Embedded R ended.
+2024-06-02 12:55:01,487 INFO - rpy2.rinterface_lib.embedded - Embedded R already ended.

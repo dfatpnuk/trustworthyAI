@@ -18,6 +18,7 @@ from pytz import timezone
 from datetime import datetime
 import matplotlib.pyplot as plt
 import tensorflow as tf
+tf.compat.v1.disable_eager_execution()
 
 from data_loader import DataGenerator_read_data
 from models import Actor
@@ -34,7 +35,6 @@ from helpers.lambda_utils import BIC_lambdas
 # Configure matplotlib for plotting
 import matplotlib
 matplotlib.use('Agg')
-
 
 def main():
     # Setup for output directory and logging

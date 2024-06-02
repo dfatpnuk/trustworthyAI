@@ -1,0 +1,21 @@
+2024-06-01 12:44:37,871 INFO - helpers.log_helper - Completed configuring logger.
+2024-06-01 12:44:37,872 INFO - __main__ - Python version is 3.8.19
+2024-06-01 12:44:37,872 INFO - __main__ - Current commit of code: ___
+2024-06-01 12:44:37,872 CRITICAL - helpers.log_helper - Unhandled exception
+Traceback (most recent call last):
+  File "main.py", line 322, in <module>
+    main()
+  File "main.py", line 72, in main
+    set_seed(config.seed)
+  File "/Users/jaime/repos/sit723/trustworthyAI/research/Causal Discovery with RL/src/helpers/tf_utils.py", line 18, in set_seed
+    tf.set_random_seed(seed)
+AttributeError: module 'tensorflow' has no attribute 'set_random_seed'
+2024-06-01 12:44:37,958 WARNING - rpy2.rinterface_lib.callbacks - R[write to console]: Warning message:
+
+2024-06-01 12:44:37,958 WARNING - rpy2.rinterface_lib.callbacks - R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
+2024-06-01 12:44:37,958 WARNING - rpy2.rinterface_lib.callbacks - R[write to console]: 
+ 
+2024-06-01 12:44:37,958 WARNING - rpy2.rinterface_lib.callbacks - R[write to console]:  library ‘/Users/jaime/Rlibs’ contains no packages
+
+2024-06-01 12:44:37,958 INFO - rpy2.rinterface_lib.embedded - Embedded R ended.
+2024-06-01 12:44:37,958 INFO - rpy2.rinterface_lib.embedded - Embedded R already ended.

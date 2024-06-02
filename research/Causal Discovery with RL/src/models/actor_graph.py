@@ -1,5 +1,8 @@
 import logging
 import tensorflow as tf
+# from tensorflow.compat.v1 import *
+import tensorflow._api.v2.compat.v1 as tf
+tf.compat.v1.disable_eager_execution()
 import numpy as np
 
 from .encoder import TransformerEncoder, GATEncoder

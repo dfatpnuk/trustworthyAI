@@ -1,0 +1,13 @@
+2024-06-01 13:08:35,523 INFO - helpers.log_helper - Completed configuring logger.
+2024-06-01 13:08:35,523 INFO - __main__ - Python version is 3.8.19
+2024-06-01 13:08:35,523 INFO - __main__ - Current commit of code: ___
+2024-06-01 13:08:35,524 INFO - __main__ - Configuration parameters: {'encoder_type': 'TransformerEncoder', 'hidden_dim': 64, 'num_heads': 16, 'num_stacks': 6, 'residual': False, 'decoder_type': 'SingleLayerDecoder', 'decoder_activation': 'tanh', 'decoder_hidden_dim': 16, 'use_bias': False, 'use_bias_constant': False, 'bias_initial_value': False, 'batch_size': 64, 'input_dimension': 64, 'max_length': 6, 'data_size': 3000, 'read_data': False, 'data_path': 'data', 'normalize': False, 'transpose': False, 'score_type': 'BIC', 'reg_type': 'LR', 'lambda_iter_num': 1000, 'lambda_flag_default': False, 'score_bd_tight': True, 'lambda1_update': 1, 'lambda2_update': 10, 'score_lower': 0.0, 'score_upper': 0.0, 'lambda2_lower': -1, 'lambda2_upper': -1, 'seed': 8, 'nb_epoch': 20000, 'lr1_start': 0.001, 'lr1_decay_step': 5000, 'lr1_decay_rate': 0.96, 'alpha': 0.99, 'init_baseline': -1.0, 'temperature': 3.0, 'C': 10.0, 'l1_graph_reg': 0.0, 'inference_mode': True, 'restore_model': False, 'save_to': '20/model', 'restore_from': '20/model', 'log_dir': 'summary/20/repo', 'verbose': False, 'save_model_path': 'output/2024-06-01_13-08-35-523/model', 'summary_dir': 'output/2024-06-01_13-08-35-523/summary', 'plot_dir': 'output/2024-06-01_13-08-35-523/plot', 'graph_dir': 'output/2024-06-01_13-08-35-523/graph'}
+2024-06-01 13:08:35,524 CRITICAL - helpers.log_helper - Unhandled exception
+Traceback (most recent call last):
+  File "main.py", line 322, in <module>
+    main()
+  File "main.py", line 82, in main
+    raise ValueError("Only support importing data from existing files")
+ValueError: Only support importing data from existing files
+2024-06-01 13:08:35,595 INFO - rpy2.rinterface_lib.embedded - Embedded R ended.
+2024-06-01 13:08:35,596 INFO - rpy2.rinterface_lib.embedded - Embedded R already ended.

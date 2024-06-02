@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.contrib.rnn import LSTMCell, MultiRNNCell, DropoutWrapper
+from tensorflow.compat.v1.nn.rnn_cell import LSTMCell, MultiRNNCell, DropoutWrapper   # from tensorflow.contrib.rnn import LSTMCell, MultiRNNCell, DropoutWrapper
 import numpy as np
 #from tqdm import tqdm
 

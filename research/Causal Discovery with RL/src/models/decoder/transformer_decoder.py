@@ -1,6 +1,6 @@
 import tensorflow as tf
-from tensorflow.contrib.rnn import LSTMCell, GRUCell, MultiRNNCell, DropoutWrapper
-from tensorflow.contrib import distributions as distr
+from tensorflow.compat.v1.nn.rnn_cell import LSTMCell, GRUCell, MultiRNNCell, DropoutWrapper    # from tensorflow.contrib.rnn import LSTMCell, GRUCell, MultiRNNCell, DropoutWrapper
+from tensorflow_probability import distributions as distr   # from tensorflow.contrib import distributions as distr
 
 from ..encoder import TransformerEncoder
 # from config_graph import get_config, print_config

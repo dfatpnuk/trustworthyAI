@@ -87,7 +87,7 @@ class TransformerEncoder(object):
         self.num_heads = config.num_heads
         self.num_stacks = config.num_stacks
  
-        self.initializer = tf.contrib.layers.xavier_initializer() # variables initializer
+        self.initializer = tf.keras.initializers.GlorotUniform() # variables initializer
  
         self.is_training = is_train #not config.inference_mode
  
